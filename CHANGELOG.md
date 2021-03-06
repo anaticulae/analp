@@ -2,6 +2,12 @@
 
 Every noteable change is logged here.
 
+## v0.2.1
+
+### Fix
+
+* add default return type of normalized sentence (58e715569087)
+
 ## v0.2.0
 
 ### Feature
