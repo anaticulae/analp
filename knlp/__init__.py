@@ -13,6 +13,6 @@ from knlp.sentence import normalize as normalize_sentence
 from knlp.sentence import sent_tokenize
 from knlp.word import word_tokenize
 
-__version__ = '0.1.0'
+__version__ = '0.2.0'
 
 ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
