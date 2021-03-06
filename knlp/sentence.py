@@ -15,11 +15,15 @@ import nltk.tokenize
 STEMMER = nltk.stem.SnowballStemmer("german")
 
 
-def normalize(raw: str, remove_punctation: bool = True) -> str:
+def normalize(
+        raw: str,
+        join: bool = False,
+        remove_punctation: bool = True,
+) -> list:
     """\
     >>> normalize('Hier spricht Helmut .')
-    'hier spricht helmut'
-    >>> normalize('Heute sprechen wir doch über ein Thema')
+    ['hier', 'spricht', 'helmut']
+    >>> normalize('Heute sprechen wir doch über ein Thema', join=True)
     'heut sprech wir doch uber ein thema'
     """
     raw = raw.lower()
@@ -27,7 +31,10 @@ def normalize(raw: str, remove_punctation: bool = True) -> str:
     if remove_punctation:
         splitted = [item for item in splitted if item not in string.punctuation]
     stemmed = [STEMMER.stem(item) for item in splitted]
-    result = ' '.join(stemmed)
+    if join:
+        result = ' '.join(stemmed)
+    else:
+        result = stemmed
     return result
 
 
