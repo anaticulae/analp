@@ -10,6 +10,8 @@
 import os
 
 from knlp.sentence import normalize as normalize_sentence
+from knlp.sentence import sent_tokenize
+from knlp.word import word_tokenize
 
 __version__ = '0.1.0'
 

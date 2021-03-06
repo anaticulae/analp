@@ -10,6 +10,7 @@
 import string
 
 import nltk.stem
+import nltk.tokenize
 
 STEMMER = nltk.stem.SnowballStemmer("german")
 
@@ -28,3 +29,12 @@ def normalize(raw: str, remove_punctation: bool = True) -> str:
     stemmed = [STEMMER.stem(item) for item in splitted]
     result = ' '.join(stemmed)
     return result
+
+
+def sent_tokenize(text: str, language='german') -> list:
+    """\
+    >>> sent_tokenize('Das ist ein Text. Und ich bin Satz 2.')
+    ['Das ist ein Text.', 'Und ich bin Satz 2.']
+    """
+    tokenized = nltk.tokenize.sent_tokenize(text, language=language)
+    return list(tokenized)
