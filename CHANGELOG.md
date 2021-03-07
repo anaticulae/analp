@@ -2,6 +2,16 @@
 
 Every noteable change is logged here.
 
+## v0.3.0
+
+### Feature
+
+* add german stop words (ab56181b46e7)
+
+### Fix
+
+* change default join value (30925e5cfa41)
+
 ## v0.2.1
 
 ### Fix
