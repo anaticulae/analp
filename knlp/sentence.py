@@ -17,13 +17,13 @@ STEMMER = nltk.stem.SnowballStemmer("german")
 
 def normalize(
         raw: str,
-        join: bool = False,
+        join: bool = True,
         remove_punctation: bool = True,
 ) -> list:
     """\
-    >>> normalize('Hier spricht Helmut .')
+    >>> normalize('Hier spricht Helmut .', join=False)
     ['hier', 'spricht', 'helmut']
-    >>> normalize('Heute sprechen wir doch über ein Thema', join=True)
+    >>> normalize('Heute sprechen wir doch über ein Thema')
     'heut sprech wir doch uber ein thema'
     """
     raw = raw.lower()
