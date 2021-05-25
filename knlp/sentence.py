@@ -16,9 +16,9 @@ STEMMER = nltk.stem.SnowballStemmer("german")
 
 
 def normalize(
-        raw: str,
-        join: bool = True,
-        remove_punctation: bool = True,
+    raw: str,
+    join: bool = True,
+    remove_punctation: bool = True,
 ) -> list:
     """\
     >>> normalize('Hier spricht Helmut .', join=False)
