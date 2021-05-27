@@ -10,8 +10,10 @@
 import os
 
 from knlp.corpus import STOPWORDS
+from knlp.pos import sent_pos
 from knlp.sentence import normalize as normalize_sentence
 from knlp.sentence import sent_tokenize
+from knlp.sentiment import sent_sentiment
 from knlp.word import word_tokenize
 
 __version__ = '0.3.1'
