@@ -24,7 +24,7 @@ def word_tokenize(sentence: str, language='german') -> list:
 
 
 ESCAPE = """\
-’sche           QUOTATION_SCHE              # Luhmann’sche
+’sche           QUOTATION_SCHE              # Luhmann’sche, Luhmann’schen
 ’SCHE           QUOTATION_SCHE_UPPER
 'sche           QUOTATION_SCHE_SINGLE
 'SCHE           QUOTATION_SCHE_UPPER_SINGLE
