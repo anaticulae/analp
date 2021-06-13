@@ -2,6 +2,12 @@
 
 Every noteable change is logged here.
 
+## v0.4.1
+
+### Feature
+
+* escape special signs (5d61d8657f7c)
+
 ## v0.4.0
 
 ### Feature
