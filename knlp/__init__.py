@@ -16,6 +16,6 @@ from knlp.sentence import sent_tokenize
 from knlp.sentiment import sent_sentiment
 from knlp.word import word_tokenize
 
-__version__ = '0.3.1'
+__version__ = '0.4.0'
 
 ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))

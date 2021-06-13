@@ -2,6 +2,13 @@
 
 Every noteable change is logged here.
 
+## v0.4.0
+
+### Feature
+
+* escape german sch-pattern (22c37d79a2fe)
+* add interface to judge sentence (c2e4e983fb16)
+
 ## v0.3.1
 
 ## v0.3.0
