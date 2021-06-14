@@ -7,6 +7,8 @@
 # be prosecuted under federal law. Its content is company confidential.
 # =============================================================================
 
+import re
+
 import konrad
 import nltk.tokenize
 
@@ -21,9 +23,25 @@ def word_tokenize(sentence: str, language: str = 'german') -> list:
     ['Hier', 'lässt', 'sich', 'auch', 'der', 'Luhmann’sche', 'Personenbegriff', 'angliedern', '.']
     >>> word_tokenize('Clay Shirky‘s Writings About the Internet.', language='science')
     ['Clay', 'Shirky‘s', 'Writings', 'About', 'the', 'Internet', '.']
+    >>> word_tokenize('Kaplan/Haenlein (2009) schreiben dazu: “In our view […] Social Media”12.', language='science')
+    ['Kaplan/Haenlein', '(', '2009', ')', 'schreiben', 'dazu', ':', '“', 'In', 'our', 'view', '[', '…', ']', 'Social', 'Media', '”', '12', '.']
+    >>> word_tokenize('Phänomen‚Protest‘ angemessen erfassen', language='science')
+    ['Phänomen', '‚', 'Protest', '‘', 'angemessen', 'erfassen']
     """
     language = konrad.complexlang(language)
+    sentence = hack(sentence)
     sentence = knlp.utils.escape(sentence)
     tokenized = nltk.tokenize.word_tokenize(sentence, language=language)
     result = knlp.utils.deescape(tokenized)
     return result
+
+
+def hack(line: str) -> str:
+    """Remove after improving `Science` parser.
+
+    >>> hack('Phänomen‚Protest‘ angemessen')
+    'Phänomen ‚ Protest‘ angemessen'
+    """
+    line = re.sub(r'‚(?=\S)', '‚ ', line)
+    line = re.sub(r'(?=\S)‚', ' ‚', line)
+    return line
