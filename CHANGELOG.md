@@ -2,6 +2,12 @@
 
 Every noteable change is logged here.
 
+## v0.4.4
+
+### Fix
+
+* skip unknown language (1b07d88581dc)
+
 ## v0.4.3
 
 ## v0.4.2
