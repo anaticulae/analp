@@ -29,6 +29,9 @@ def word_tokenize(sentence: str, language: str = 'german') -> list:
     ['Phänomen', '‚', 'Protest', '‘', 'angemessen', 'erfassen']
     """
     language = konrad.complexlang(language)
+    if language == 'unknown':
+        # unknown language is not defined yet.
+        language = 'science'
     sentence = hack(sentence)
     sentence = knlp.utils.escape(sentence)
     tokenized = nltk.tokenize.word_tokenize(sentence, language=language)
