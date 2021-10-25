@@ -10,8 +10,8 @@
 import re
 
 import konrad
-import nltk.tokenize
 
+import knlp
 import knlp.utils
 
 
@@ -34,7 +34,7 @@ def word_tokenize(sentence: str, language: str = 'german') -> list:
         language = 'science'
     sentence = hack(sentence)
     sentence = knlp.utils.escape(sentence)
-    tokenized = nltk.tokenize.word_tokenize(sentence, language=language)
+    tokenized = knlp.__lazy__.word_tokenize(sentence, language=language)
     result = knlp.utils.deescape(tokenized)
     return result
 

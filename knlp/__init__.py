@@ -9,7 +9,7 @@
 
 import os
 
-from knlp.corpus import STOPWORDS
+import knlp.__lazy__
 from knlp.pos import sent_pos
 from knlp.sentence import normalize as normalize_sentence
 from knlp.sentence import sent_tokenize
@@ -19,3 +19,6 @@ from knlp.word import word_tokenize
 __version__ = '0.4.4'
 
 ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
+"""Load STOPWORDS on access time."""
+# from knlp.corpus import STOPWORDS, see __lazy__
+__getattr__ = lambda name: getattr(knlp.__lazy__, name)

@@ -7,10 +7,10 @@
 # be prosecuted under federal law. Its content is company confidential.
 # =============================================================================
 
-import nltk
 import utila
 
 import knlp
+import knlp.__lazy__
 
 
 def sent_pos(text: str, language='german') -> list:
@@ -22,7 +22,7 @@ def sent_pos(text: str, language='german') -> list:
     language = lang(language)
     tokens = knlp.word_tokenize(text)
     try:
-        tagged = nltk.pos_tag(tokens, lang=language)
+        tagged = knlp.__lazy__.pos_tag(tokens, lang=language)
     except NotImplementedError:
         utila.error(f'language not supported: {language}')
         return None

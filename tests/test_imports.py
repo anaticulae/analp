@@ -7,8 +7,13 @@
 # be prosecuted under federal law. Its content is company confidential.
 # =============================================================================
 
-# SEE __lazy__
 
-# import nltk.corpus
+def test_import_stopwords_lazy():
+    import knlp
+    assert len(knlp.__lazy__.STOPWORDS) > 100
+    assert len(knlp.STOPWORDS) > 100
 
-# STOPWORDS = frozenset(nltk.corpus.stopwords.words('german'))
+
+def test_import_stopwords_from_module():
+    import knlp
+    assert len(knlp.STOPWORDS) > 100
