@@ -2,6 +2,12 @@
 
 Every noteable change is logged here.
 
+## v0.5.0
+
+### Feature
+
+* lazy load nltk to reduce testing time (c6c1c3efe46e)
+
 ## v0.4.4
 
 ### Fix
