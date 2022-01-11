@@ -48,3 +48,16 @@ def hack(line: str) -> str:
     line = re.sub(r'‚(?=\S)', '‚ ', line)
     line = re.sub(r'(?=\S)‚', ' ‚', line)
     return line
+
+
+def isstopword(word: str, lang: str = 'german') -> bool:  # pylint:disable=W0613
+    """\
+    >>> isstopword('der')
+    True
+    >>> isstopword('House')
+    False
+    """
+    # lang = konrad.complexlang(lang)
+    word = word.lower()
+    result = word in knlp.STOPWORDS
+    return result
