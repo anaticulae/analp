@@ -29,7 +29,7 @@ def lazy() -> Configure:
         word_tokenize=nltk.word_tokenize,
         pos_tag=nltk.pos_tag,
         STOPWORDS=nltk.corpus.stopwords.words('german'),
-        STEMMER=nltk.stem.SnowballStemmer("german"),
+        STEMMER=nltk.stem.SnowballStemmer('german'),
     )
     return result
 
