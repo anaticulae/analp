@@ -7,6 +7,7 @@
 # be prosecuted under federal law. Its content is company confidential.
 # =============================================================================
 
+import functools
 import re
 
 import konrad
@@ -60,4 +61,16 @@ def isstopword(word: str, lang: str = 'german') -> bool:  # pylint:disable=W0613
     # lang = konrad.complexlang(lang)
     word = word.lower()
     result = word in knlp.STOPWORDS
+    return result
+
+
+@functools.lru_cache(maxsize=None)
+def stopwords(lang: str = 'german') -> set:
+    """\
+    >>> stopwords('english')
+    ['i',...wouldn't"]
+    """
+    import nltk.corpus
+    lang = konrad.complexlang(lang)
+    result = nltk.corpus.stopwords.words(lang)
     return result
