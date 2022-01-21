@@ -18,7 +18,7 @@ from knlp.word import isstopword
 from knlp.word import stopwords
 from knlp.word import word_tokenize
 
-__version__ = '0.5.0'
+__version__ = '0.6.0'
 
 ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
 """Load STOPWORDS on access time."""

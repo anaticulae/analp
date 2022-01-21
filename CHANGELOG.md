@@ -2,6 +2,17 @@
 
 Every noteable change is logged here.
 
+## v0.6.0
+
+### Feature
+
+* add method to load stop words by language (928c2a8a4cd9)
+* add method to check that word is a stop word (784e4063a10d)
+
+### Documentation
+
+* Happy New Year! (1cb7d7b96913)
+
 ## v0.5.0
 
 ### Feature
