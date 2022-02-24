@@ -9,6 +9,7 @@
 
 import collections
 import functools
+import threading
 
 import utila
 
@@ -18,7 +19,7 @@ Configure = collections.namedtuple(
 )
 
 
-@functools.lru_cache(maxsize=None)
+@functools.lru_cache
 def lazy() -> Configure:
     utila.debug('configure nltk')
     import nltk
@@ -34,7 +35,11 @@ def lazy() -> Configure:
     return result
 
 
+LOCK = threading.Lock()
+
+
 def __getattr__(name):
-    data = lazy()
-    result = getattr(data, name)
+    with LOCK:
+        data = lazy()
+        result = getattr(data, name)
     return result
