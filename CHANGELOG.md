@@ -2,6 +2,16 @@
 
 Every noteable change is logged here.
 
+## v0.6.1
+
+### Fix
+
+* make lookup thread safe (28bd92b19253)
+
+### Documentation
+
+* adjust modules path (7422a0530630)
+
 ## v0.6.0
 
 ### Feature
