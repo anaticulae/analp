@@ -51,17 +51,16 @@ def hack(line: str) -> str:
     return line
 
 
-def isstopword(word: str, lang: str = 'german') -> bool:  # pylint:disable=W0613
+def isstopword(word: str, lang: str = 'german') -> bool:
     """\
     >>> isstopword('der')
     True
     >>> isstopword('House')
     False
     """
-    # lang = konrad.complexlang(lang)
+    lang = konrad.complexlang(lang)
     word = word.lower()
-    result = word in knlp.STOPWORDS
-    return result
+    return word in stopwords(lang)
 
 
 @functools.lru_cache(maxsize=None)
