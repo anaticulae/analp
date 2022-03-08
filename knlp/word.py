@@ -68,9 +68,9 @@ def isstopword(word: str, lang: str = 'german') -> bool:  # pylint:disable=W0613
 def stopwords(lang: str = 'german') -> set:
     """\
     >>> stopwords('english')
-    ['i',...wouldn't"]
+    {'been',...'him'}
     """
     import nltk.corpus
     lang = konrad.complexlang(lang)
-    result = nltk.corpus.stopwords.words(lang)
+    result = set(nltk.corpus.stopwords.words(lang))
     return result
