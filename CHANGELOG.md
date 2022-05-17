@@ -2,6 +2,13 @@
 
 Every noteable change is logged here.
 
+## v0.6.2
+
+### Fix
+
+* make stop word checker lang dependent (d2f880e11713)
+* adjust stop words data type (f7e06599e3ee)
+
 ## v0.6.1
 
 ### Fix
