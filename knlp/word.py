@@ -68,6 +68,8 @@ def stopwords(lang: str = 'german') -> set:
     """\
     >>> stopwords('english')
     {'been',...'him'}
+    >>> stopwords('fre')
+    {'étiez',...'aurais'}
     """
     import nltk.corpus
     lang = konrad.complexlang(lang)
