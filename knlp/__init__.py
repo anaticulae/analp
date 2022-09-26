@@ -9,6 +9,9 @@
 
 import os
 
+import german_data
+import nltk_data
+
 import knlp.__lazy__
 from knlp.pos import sent_pos
 from knlp.sentence import normalize as normalize_sentence
@@ -24,3 +27,5 @@ ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
 """Load STOPWORDS on access time."""
 # from knlp.corpus import STOPWORDS, see __lazy__
 __getattr__ = lambda name: getattr(knlp.__lazy__, name)
+
+nltk_data.add_nltk_path(german_data.ROOT)
