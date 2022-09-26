@@ -2,6 +2,17 @@
 
 Every noteable change is logged here.
 
+## v0.6.4 (2022-09-26)
+
+### Fix
+
+* ensure that corpora are added (aed9b3eae4a7)
+
+### Chore
+
+* add Jenkinsfile (75f251dc58b4)
+* upgrade requirements.txt (1d2ee4f6ef9d)
+
 ## v0.6.3
 
 ## v0.6.2
