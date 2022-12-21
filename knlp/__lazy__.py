@@ -23,8 +23,8 @@ Configure = collections.namedtuple(
 def lazy() -> Configure:
     utila.debug('configure nltk')
     import nltk
-    import nltk.stem
     import nltk.corpus
+    import nltk.stem
     result = Configure(
         sent_tokenize=nltk.sent_tokenize,
         word_tokenize=nltk.word_tokenize,
