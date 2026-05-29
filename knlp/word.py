@@ -66,10 +66,10 @@ def isstopword(word: str, lang: str = 'german') -> bool:
 @functools.lru_cache(maxsize=None)
 def stopwords(lang: str = 'german') -> set:
     """\
-    >>> stopwords('english')
-    {'been',...'him'}
-    >>> stopwords('fre')
-    {'étiez',...'aurais'}
+    >>> sorted(stopwords('english'))
+    ['a', 'about', 'above',...'your', 'yours', 'yourself', 'yourselves']
+    >>> sorted(stopwords('fre'))
+    ['ai', 'aie', 'aient', 'aies',...'étées', 'étés', 'êtes']
     """
     import nltk.corpus
     lang = konradus.complexlang(lang)
