@@ -9,9 +9,6 @@
 
 import os
 
-import german_data
-import nltk_data
-
 import knlp.__lazy__
 from knlp.pos import sent_pos
 from knlp.sentence import normalize as normalize_sentence
@@ -21,6 +18,10 @@ from knlp.word import isstopword
 from knlp.word import stopwords
 from knlp.word import word_tokenize
 
+# import german_data
+# import ltk_data
+
+
 __version__ = '0.6.4'
 
 ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
@@ -28,4 +29,4 @@ ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
 # from knlp.corpus import STOPWORDS, see __lazy__
 __getattr__ = lambda name: getattr(knlp.__lazy__, name)
 
-nltk_data.add_nltk_path(german_data.ROOT)
+# ltk_data.add_nltk_path(german_data.ROOT)
