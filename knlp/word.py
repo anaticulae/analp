@@ -29,6 +29,9 @@ def word_tokenize(sentence: str, language: str = 'german') -> list:
     >>> word_tokenize('Phänomen‚Protest‘ angemessen erfassen', language='science')
     ['Phänomen', '‚', 'Protest', '‘', 'angemessen', 'erfassen']
     """
+    if language == 'science':
+        # TODO: ENABLE SCIENCE LATER
+        language = 'german'
     language = konradus.complexlang(language)
     if language == 'unknown':
         # unknown language is not defined yet.
