@@ -7,7 +7,7 @@
 # be prosecuted under federal law. Its content is company confidential.
 # =============================================================================
 
-import utila
+import utilo
 
 import knlp
 import knlp.__lazy__
@@ -24,7 +24,7 @@ def sent_pos(text: str, language='german') -> list:
     try:
         tagged = knlp.__lazy__.pos_tag(tokens, lang=language)
     except NotImplementedError:
-        utila.error(f'language not supported: {language}')
+        utilo.error(f'language not supported: {language}')
         return None
     return tagged
 

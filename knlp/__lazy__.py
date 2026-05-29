@@ -11,7 +11,7 @@ import collections
 import functools
 import threading
 
-import utila
+import utilo
 
 Configure = collections.namedtuple(
     'Configure',
@@ -21,7 +21,7 @@ Configure = collections.namedtuple(
 
 @functools.lru_cache
 def lazy() -> Configure:
-    utila.debug('configure nltk')
+    utilo.debug('configure nltk')
     import nltk
     import nltk.corpus
     import nltk.stem

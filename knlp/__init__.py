@@ -21,7 +21,6 @@ from knlp.word import word_tokenize
 # import german_data
 # import ltk_data
 
-
 __version__ = '0.6.4'
 
 ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))

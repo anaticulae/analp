@@ -10,7 +10,7 @@
 import functools
 import re
 
-import konrad
+import konradus
 
 import knlp
 import knlp.utils
@@ -29,7 +29,7 @@ def word_tokenize(sentence: str, language: str = 'german') -> list:
     >>> word_tokenize('Phänomen‚Protest‘ angemessen erfassen', language='science')
     ['Phänomen', '‚', 'Protest', '‘', 'angemessen', 'erfassen']
     """
-    language = konrad.complexlang(language)
+    language = konradus.complexlang(language)
     if language == 'unknown':
         # unknown language is not defined yet.
         language = 'science'
@@ -58,7 +58,7 @@ def isstopword(word: str, lang: str = 'german') -> bool:
     >>> isstopword('House')
     False
     """
-    lang = konrad.complexlang(lang)
+    lang = konradus.complexlang(lang)
     word = word.lower()
     return word in stopwords(lang)
 
@@ -72,6 +72,6 @@ def stopwords(lang: str = 'german') -> set:
     {'étiez',...'aurais'}
     """
     import nltk.corpus
-    lang = konrad.complexlang(lang)
+    lang = konradus.complexlang(lang)
     result = set(nltk.corpus.stopwords.words(lang))
     return result
