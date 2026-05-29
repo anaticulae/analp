@@ -25,6 +25,11 @@ def lazy() -> Configure:
     import nltk
     import nltk.corpus
     import nltk.stem
+
+    nltk.download('stopwords', quiet=True)
+    nltk.download('punkt_tab', quiet=True)
+    nltk.download('averaged_perceptron_tagger_eng', quiet=True)
+
     result = Configure(
         sent_tokenize=nltk.sent_tokenize,
         word_tokenize=nltk.word_tokenize,
