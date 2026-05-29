@@ -9,8 +9,8 @@
 
 import utilo
 
-import knlp
-import knlp.__lazy__
+import analp
+import analp.__lazy__
 
 
 def sent_pos(text: str, language='german') -> list:
@@ -20,9 +20,9 @@ def sent_pos(text: str, language='german') -> list:
     >>> sent_pos('Hier spricht Helmut.') # TODO: not supported yet
     """
     language = lang(language)
-    tokens = knlp.word_tokenize(text)
+    tokens = analp.word_tokenize(text)
     try:
-        tagged = knlp.__lazy__.pos_tag(tokens, lang=language)
+        tagged = analp.__lazy__.pos_tag(tokens, lang=language)
     except NotImplementedError:
         utilo.error(f'language not supported: {language}')
         return None

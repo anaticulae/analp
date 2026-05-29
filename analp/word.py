@@ -12,8 +12,8 @@ import re
 
 import konradus
 
-import knlp
-import knlp.utils
+import analp
+import analp.utils
 
 
 def word_tokenize(sentence: str, language: str = 'german') -> list:
@@ -37,9 +37,9 @@ def word_tokenize(sentence: str, language: str = 'german') -> list:
         # unknown language is not defined yet.
         language = 'science'
     sentence = hack(sentence)
-    sentence = knlp.utils.escape(sentence)
-    tokenized = knlp.__lazy__.word_tokenize(sentence, language=language)
-    result = knlp.utils.deescape(tokenized)
+    sentence = analp.utils.escape(sentence)
+    tokenized = analp.__lazy__.word_tokenize(sentence, language=language)
+    result = analp.utils.deescape(tokenized)
     return result
 
 

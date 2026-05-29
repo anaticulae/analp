@@ -9,11 +9,11 @@
 
 
 def test_import_stopwords_lazy():
-    import knlp
-    assert len(knlp.__lazy__.STOPWORDS) > 100
-    assert len(knlp.STOPWORDS) > 100
+    import analp
+    assert len(analp.__lazy__.STOPWORDS) > 100
+    assert len(analp.STOPWORDS) > 100
 
 
 def test_import_stopwords_from_module():
-    import knlp
-    assert len(knlp.STOPWORDS) > 100
+    import analp
+    assert len(analp.STOPWORDS) > 100

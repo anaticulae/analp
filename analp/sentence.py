@@ -9,7 +9,7 @@
 
 import string
 
-import knlp.__lazy__
+import analp.__lazy__
 
 
 def normalize(
@@ -27,7 +27,7 @@ def normalize(
     splitted = raw.split()
     if remove_punctation:
         splitted = [item for item in splitted if item not in string.punctuation]
-    stemmed = [knlp.__lazy__.STEMMER.stem(item) for item in splitted]
+    stemmed = [analp.__lazy__.STEMMER.stem(item) for item in splitted]
     if join:
         result = ' '.join(stemmed)
     else:
@@ -40,5 +40,5 @@ def sent_tokenize(text: str, language='german') -> list:
     >>> sent_tokenize('Das ist ein Text. Und ich bin Satz 2.')
     ['Das ist ein Text.', 'Und ich bin Satz 2.']
     """
-    tokenized = knlp.__lazy__.sent_tokenize(text, language=language)
+    tokenized = analp.__lazy__.sent_tokenize(text, language=language)
     return list(tokenized)

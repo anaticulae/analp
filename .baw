@@ -1,5 +1,5 @@
 [project]
-short = knlp
+short = analp
 name = nlp wrapper
 
 [release]
