@@ -1,109 +1,284 @@
-# Changelog
+# CHANGELOG
 
-Every noteable change is logged here.
+
+## v1.0.0 (2026-05-30)
+
+### Bug Fixes
+
+- **project**: Enable later
+  ([`8077069`](https://github.com/anaticulae/analp/commit/807706946ab29d1c2de45af34f59fa0697b1a2a9))
+
+### Chores
+
+- **docs**: Adjust documents
+  ([`2244fd9`](https://github.com/anaticulae/analp/commit/2244fd97cdedd94ae5781c79cedee16bf56185dc))
+
+- **github**: Add .github
+  ([`83f29ef`](https://github.com/anaticulae/analp/commit/83f29ef0c6b54975edcc2d79fcac75553ea06882))
+
+- **Jenkins**: Upgrade pipeline
+  ([`df4b987`](https://github.com/anaticulae/analp/commit/df4b9873dcadfcef93fba7a74ca367bb349e173b))
+
+- **project**: Adjust modern project setup
+  ([`a3c05a3`](https://github.com/anaticulae/analp/commit/a3c05a3eddadd3fdbf551c498a5548ce9f706a46))
+
+- **project**: Adjust project name
+  ([`a167687`](https://github.com/anaticulae/analp/commit/a1676872542e5babfc2c2fd29916f7b3123a8442))
+
+- **project**: Use dynamic versioning
+  ([`9713e23`](https://github.com/anaticulae/analp/commit/9713e23fe207b79edb8d6f7b689a42552e90d5ad))
+
+- **requirements**: Upgrade requirements.txt
+  ([`2f2203e`](https://github.com/anaticulae/analp/commit/2f2203ef870608b0492fff231450cf2b3fca9cf3))
+
+### Code Style
+
+- **imports**: Organize imports
+  ([`7bf4693`](https://github.com/anaticulae/analp/commit/7bf469361561931f207ba163236591e4b01b05b2))
+
+### Features
+
+- **lazy**: Ensure that data is downloaded
+  ([`ec57a9d`](https://github.com/anaticulae/analp/commit/ec57a9dbfc3727a9e549a1afcebe24138d4d16d8))
+
+### Refactoring
+
+- **imports**: Adjust names
+  ([`217e4b8`](https://github.com/anaticulae/analp/commit/217e4b89f25613bbfdb4ef03124ad1ba650dd605))
+
+### Testing
+
+- **docs**: Adjust unit test
+  ([`38b6485`](https://github.com/anaticulae/analp/commit/38b64859b8a43601098a926bdf25c8f7b3c58f4c))
+
+- **word**: Make it run
+  ([`125abf9`](https://github.com/anaticulae/analp/commit/125abf9956f79337540ab7a4ce4aa4ee99d5bb57))
+
 
 ## v0.6.4 (2022-09-26)
 
-### Fix
+### Bug Fixes
 
-* ensure that corpora are added (aed9b3eae4a7)
+- **knlp**: Ensure that corpora are added
+  ([`aed9b3e`](https://github.com/anaticulae/analp/commit/aed9b3eae4a7816b9ca1dd7252ef8b18190ee5a8))
 
-### Chore
+### Chores
 
-* add Jenkinsfile (75f251dc58b4)
-* upgrade requirements.txt (1d2ee4f6ef9d)
+- **ci**: Add Jenkinsfile
+  ([`75f251d`](https://github.com/anaticulae/analp/commit/75f251dc58b4047b885374725258cea29c9e406a))
 
-## v0.6.3
+- **requirements**: Upgrade requirements.txt
+  ([`1d2ee4f`](https://github.com/anaticulae/analp/commit/1d2ee4f6ef9de809d64782f9f9177681c7f1ffe5))
 
-## v0.6.2
+### Code Style
 
-### Fix
+- **changelog**: Adjust changelog
+  ([`c76ce79`](https://github.com/anaticulae/analp/commit/c76ce79baff10fde75adc4d37f7c0af479ebe12d))
 
-* make stop word checker lang dependent (d2f880e11713)
-* adjust stop words data type (f7e06599e3ee)
 
-## v0.6.1
+## v0.6.3 (2022-07-06)
 
-### Fix
+### Chores
 
-* make lookup thread safe (28bd92b19253)
+- **requirements**: Upgrade requirements.txt
+  ([`275852a`](https://github.com/anaticulae/analp/commit/275852a32dcb798107fad91892417a82f2a7f133))
+
+### Testing
+
+- **word**: Ensure that stop word supports short lang invocation
+  ([`35f8479`](https://github.com/anaticulae/analp/commit/35f8479989790bb32ff50b148a74225c4dda34b0))
+
+
+## v0.6.2 (2022-05-17)
+
+### Bug Fixes
+
+- **word**: Adjust stop words data type
+  ([`f7e0659`](https://github.com/anaticulae/analp/commit/f7e06599e3ee1de78f7c9f86a43a3cdd96d2b506))
+
+- **word**: Make stop word checker lang dependent
+  ([`d2f880e`](https://github.com/anaticulae/analp/commit/d2f880e117130e6a77e749d163638797e7ffc1c6))
+
+### Chores
+
+- **requirements**: Upgrade requirements.txt
+  ([`fb5902e`](https://github.com/anaticulae/analp/commit/fb5902eaf9b2975ef44c682b965796b11e61391a))
+
+
+## v0.6.1 (2022-02-24)
+
+### Bug Fixes
+
+- **lazy**: Make lookup thread safe
+  ([`28bd92b`](https://github.com/anaticulae/analp/commit/28bd92b1925315422bb93e2308d8f9062c4ae1da))
+
+### Chores
+
+- **config**: Move project config
+  ([`58e85a2`](https://github.com/anaticulae/analp/commit/58e85a2069d41c51c6f9341741bee8fe319228ca))
+
+- **requirements**: Upgrade requirements.txt
+  ([`636cd19`](https://github.com/anaticulae/analp/commit/636cd192c8862e06fb3359f50c1fb6a325e89649))
 
 ### Documentation
 
-* adjust modules path (7422a0530630)
+- **fix**: Adjust modules path
+  ([`7422a05`](https://github.com/anaticulae/analp/commit/7422a0530630516955c0c25b5a888ad565105787))
 
-## v0.6.0
 
-### Feature
+## v0.6.0 (2022-01-21)
 
-* add method to load stop words by language (928c2a8a4cd9)
-* add method to check that word is a stop word (784e4063a10d)
+### Chores
+
+- **requirements**: Upgrade requirements.txt
+  ([`d97f683`](https://github.com/anaticulae/analp/commit/d97f6838562ac036ae3ed40f86f44fd32484a45e))
+
+- **requirements**: Upgrade requirements.txt
+  ([`3819e71`](https://github.com/anaticulae/analp/commit/3819e714c67acf7969047fad1487f4d9ae60ce4e))
 
 ### Documentation
 
-* Happy New Year! (1cb7d7b96913)
+- **copyright**: Happy New Year!
+  ([`1cb7d7b`](https://github.com/anaticulae/analp/commit/1cb7d7b96913121fe7b6940e1c56958335158ead))
 
-## v0.5.0
+### Features
 
-### Feature
+- **word**: Add method to check that word is a stop word
+  ([`784e406`](https://github.com/anaticulae/analp/commit/784e4063a10d3a39e013cd761f874e93b20d6a0a))
 
-* lazy load nltk to reduce testing time (c6c1c3efe46e)
+- **word**: Add method to load stop words by language
+  ([`928c2a8`](https://github.com/anaticulae/analp/commit/928c2a8a4cd9f73a8a7967b633cd29bd049ebd4c))
 
-## v0.4.4
+### Refactoring
 
-### Fix
+- **style**: Fix quotation mark
+  ([`1efaf1f`](https://github.com/anaticulae/analp/commit/1efaf1faf25e84f7ba04efdf0ee1da5bffa30d0a))
 
-* skip unknown language (1b07d88581dc)
 
-## v0.4.3
+## v0.5.0 (2021-10-25)
 
-## v0.4.2
+### Chores
 
-### Feature
+- **requirements**: Upgrade requirements.txt
+  ([`961875b`](https://github.com/anaticulae/analp/commit/961875bfb70af589220aace22557b4029f5da62c))
 
-* enable using konrad.Language as language parameter (73c6ce608970)
+### Features
 
-## v0.4.1
+- **import**: Lazy load nltk to reduce testing time
+  ([`c6c1c3e`](https://github.com/anaticulae/analp/commit/c6c1c3efe46ee7397fb3aa137988cd16bfe0aba5))
 
-### Feature
 
-* escape special signs (5d61d8657f7c)
+## v0.4.4 (2021-06-16)
 
-## v0.4.0
+### Bug Fixes
 
-### Feature
+- **word**: Skip unknown language
+  ([`1b07d88`](https://github.com/anaticulae/analp/commit/1b07d88581dc76aee559d73c606ab524e9fa9e8d))
 
-* escape german sch-pattern (22c37d79a2fe)
-* add interface to judge sentence (c2e4e983fb16)
 
-## v0.3.1
+## v0.4.3 (2021-06-14)
 
-## v0.3.0
 
-### Feature
+## v0.4.2 (2021-06-14)
 
-* add german stop words (ab56181b46e7)
+### Chores
 
-### Fix
+- **requirements**: Add konrad package
+  ([`0ee7c7c`](https://github.com/anaticulae/analp/commit/0ee7c7cb3957a7c92e934a70fa4c1bc2faf41c2e))
 
-* change default join value (30925e5cfa41)
+### Features
 
-## v0.2.1
+- **work**: Enable using konrad.Language as language parameter
+  ([`73c6ce6`](https://github.com/anaticulae/analp/commit/73c6ce60897028908bf329ae3e9595703bd34699))
 
-### Fix
 
-* add default return type of normalized sentence (58e715569087)
+## v0.4.1 (2021-06-13)
 
-## v0.2.0
+### Code Style
 
-### Feature
+- **word**: Extend documentation
+  ([`d97b3ab`](https://github.com/anaticulae/analp/commit/d97b3aba322750da87ab4d041a9686d849100c5b))
 
-* add wrapper to tokenize sentences and words (84511c9ec190)
+### Features
 
-## v0.1.0
+- **word**: Escape special signs
+  ([`5d61d86`](https://github.com/anaticulae/analp/commit/5d61d8657f7c9d187fa1634d1d2c8cd604ac0b0f))
 
-### Feature
 
-* add method to normalize sentence (2faa3d28fec0)
+## v0.4.0 (2021-06-13)
 
-## v0.0.0 Initial release
+### Chores
+
+- **requirements**: Add missing german package
+  ([`91c59b7`](https://github.com/anaticulae/analp/commit/91c59b7b490e4a130d426624c81237d64da89af8))
+
+- **requirements**: Upgrade requirements.txt
+  ([`686dd43`](https://github.com/anaticulae/analp/commit/686dd43cd1a16688bd81abdef5707d2ef2bce84d))
+
+### Code Style
+
+- **format**: Format code
+  ([`d7886c4`](https://github.com/anaticulae/analp/commit/d7886c4333dc78a8feb9328ceb32fc1654eca785))
+
+### Features
+
+- **API**: Add interface to judge sentence
+  ([`c2e4e98`](https://github.com/anaticulae/analp/commit/c2e4e983fb16a0583510ca960c5b9c722aaa1cb9))
+
+- **word**: Escape german sch-pattern
+  ([`22c37d7`](https://github.com/anaticulae/analp/commit/22c37d79a2fee7484376b0e857c9b189c2f5d4f2))
+
+
+## v0.3.1 (2021-05-21)
+
+### Chores
+
+- **requirements**: Upgrade requirements.txt
+  ([`d2870a5`](https://github.com/anaticulae/analp/commit/d2870a5af18297f06650bfec0fb7889b2e79168d))
+
+
+## v0.3.0 (2021-03-07)
+
+### Bug Fixes
+
+- **sentence**: Change default join value
+  ([`30925e5`](https://github.com/anaticulae/analp/commit/30925e5cfa41a857c6470d5570b248f5ac5bbed9))
+
+### Features
+
+- **corpus**: Add german stop words
+  ([`ab56181`](https://github.com/anaticulae/analp/commit/ab56181b46e7878a6356be086a2397765edeee09))
+
+
+## v0.2.1 (2021-03-06)
+
+### Bug Fixes
+
+- **sentence**: Add default return type of normalized sentence
+  ([`58e7155`](https://github.com/anaticulae/analp/commit/58e715569087e5d3594e9dbd1589a2ab88d743aa))
+
+
+## v0.2.0 (2021-03-06)
+
+### Features
+
+- **API**: Add wrapper to tokenize sentences and words
+  ([`84511c9`](https://github.com/anaticulae/analp/commit/84511c9ec19048c97fb37da37fcfeef178c023d6))
+
+
+## v0.1.0 (2021-03-06)
+
+### Chores
+
+- **requirements**: Add nltk package
+  ([`4b3260e`](https://github.com/anaticulae/analp/commit/4b3260e38861202d96775f146eecc67ff879304e))
+
+### Features
+
+- **sentence**: Add method to normalize sentence
+  ([`2faa3d2`](https://github.com/anaticulae/analp/commit/2faa3d28fec0261407aef7f328c34655c6305ba3))
+
+
+## v0.0.0 (2021-03-06)
+
+- Initial Release
