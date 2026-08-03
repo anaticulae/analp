@@ -28,6 +28,7 @@ def lazy() -> Configure:
 
     nltk.download('stopwords', quiet=True)
     nltk.download('punkt_tab', quiet=True)
+    nltk.download('crubadan', quiet=True)
     nltk.download('averaged_perceptron_tagger_eng', quiet=True)
 
     result = Configure(
