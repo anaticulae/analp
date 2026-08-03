@@ -40,8 +40,8 @@ dev = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/anaticulae/iamraw"
-Repository = "https://github.com/anaticulae/iamraw"
+Homepage = "https://github.com/anaticulae/analp"
+Repository = "https://github.com/anaticulae/analp"
 
 [tool.semantic_release]
 version_toml = [
