@@ -30,6 +30,10 @@ def sent_pos(text: str, language='german') -> list:
 
 
 def lang(item: str) -> str:
+    """\
+    >>> lang('german')
+    'ger'
+    """
     item = item.replace('german', 'ger')
     item = item.replace('english', 'eng')
     return item
