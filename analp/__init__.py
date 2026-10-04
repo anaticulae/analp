@@ -10,6 +10,9 @@
 import importlib.metadata
 import os
 
+# import german_data
+import ltk_data  # set nltk path
+
 import analp.__lazy__
 from analp.pos import sent_pos
 from analp.sentence import normalize as normalize_sentence
