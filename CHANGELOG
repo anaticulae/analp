@@ -1,6 +1,49 @@
 # CHANGELOG
 
 
+## v1.1.0 (2026-10-05)
+
+### Bug Fixes
+
+- **analp**: Set nltk base path to avoid nltk warning
+  ([`a2aa9ef`](https://github.com/anaticulae/analp/commit/a2aa9ef4ee2ac889fc89675610a0809171956b23))
+
+- **pyproject**: Adjust project url
+  ([`b47ac14`](https://github.com/anaticulae/analp/commit/b47ac14be1590aeb03292d139b4c91177c1875f6))
+
+### Chores
+
+- **license**: Add missing LICENSE
+  ([`ebb90f3`](https://github.com/anaticulae/analp/commit/ebb90f34688241e1eb6f14e6744d3b472d458123))
+
+- **pyproject**: Release on every commit
+  ([`56abf8e`](https://github.com/anaticulae/analp/commit/56abf8e5c64677bcabbebb16f5163a24254ecd7b))
+
+- **requirements**: Upgrade pyproject.toml
+  ([`fbe3c83`](https://github.com/anaticulae/analp/commit/fbe3c83425948b180a7e41d59a35410c7c61bb8a))
+
+- **test**: Do not run test twice
+  ([`8208b3b`](https://github.com/anaticulae/analp/commit/8208b3b2ae35a8c397c5981fbad3591f323aa995))
+
+### Code Style
+
+- **github**: Upgrade actions
+  ([`ec71528`](https://github.com/anaticulae/analp/commit/ec715287a5c3ab5364c910eadd5893f4b6e64678))
+
+- **make**: Format code
+  ([`e939f8b`](https://github.com/anaticulae/analp/commit/e939f8b0c13d130c0893a84937c625e761895437))
+
+### Documentation
+
+- **pos**: Add doc test
+  ([`3e939d5`](https://github.com/anaticulae/analp/commit/3e939d5a42cf3b6cfcf2e9f1f3357baaf3598888))
+
+### Features
+
+- **analp**: Add missing crubadan
+  ([`6d6df10`](https://github.com/anaticulae/analp/commit/6d6df10eaa8f4d10ed8b112f6ca6a56ae962e897))
+
+
 ## v1.0.0 (2026-05-30)
 
 ### Bug Fixes
